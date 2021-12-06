@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com o bom</title>
+    <style>
+        body{
+            background-color: rgb(76, 142, 199);
+            color: white;
+            font: normal 1.5em arial;
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>iniciandio com o DOM</h1>
+    <p>aqui vai o resultado</p>
+    <div id="bola">
+            clique em min
+    </div>
+
+    <script>
+        var corpo = document.body
+        corpo.style.backgroundColor = 'black'
+        
+        var p = document.getElementsByTagName('p')[0];
+        p.style.color = "green"
+/*
+        var bola = document.getElementById('bola')
+        bola.style.backgroundColor = 'blue'
+        window.document.getElementById('bola').innerText = 'aguardando...'
+*/
+        var bola = document.querySelector('div#bola')
+        bola.style.backgroundColor = 'green'
+    </script>
+</body>
+</html>
