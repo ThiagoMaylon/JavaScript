@@ -5,17 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font: normal 1.5em arial;
+        }
+        h1{
+            text-align: center;
+        }
+        main{
+            text-align: center;
+            position: absolute;
+            background-color: rgb(67, 67, 255);
+            color: black;
+            width: 500px;
+            height: 250px;
+            padding: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+        }
+        main input{
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>somando valores</h1>
-    <input type="number" name="n1" id="n1">
-    +
-    <input type="number" name="n2" id="n2">
-    <input type="button" value="somar" >
+    <main>
+       
+        <input type="number" name="n1" id="n1">
+        +
+        <input type="number" name="n2" id="n2">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="res">
+            aguardando resultado......
+        </div>
+    </main>
 
     <script>
+        
         function somar(){
-            
+            var num1 = document.getElementById('n1');
+            var num2 = document.getElementById('n2');
+            var res = document.querySelector('div#res');
+
+            var n1 = Number(num1.value);
+            var n2 = Number(num2.value);
+            s = n1 + n2;
+
+            res.innerHTML = ` a soma é <strong>${s}</strong>`; 
         }
     </script>
 </body>
