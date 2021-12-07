@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: black;
+            height: 96vh;
+            position: relative;
+            font: normal 1.5em arial;
+        }
+        #area{
+            line-height: 200px;
+            text-align: center;
+            position: absolute;
+            background-color: green;
+            color: white;
+            height: 200px;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area">
+        interruptor
+    </div>
+
+    <script>
+
+        var a = window.document.getElementById('area');
+        a.addEventListener('click',clicar);
+        a.addEventListener('mouseenter', dentro);
+        a.addEventListener('mouseout',sair);
+
+        function clicar() {    
+            a.innerText = 'ligado';
+            window.document.body.style.backgroundColor = 'white';
+        }
+        function dentro(){
+            a.innerText = 'ligar';
+        }
+        function sair (){
+            a.innerText = 'interruptor';
+        }
+
+    </script>
+</body>
+</html>
