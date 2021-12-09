@@ -1,10 +1,11 @@
 function carregar(){
     var agora = new Date()
     var hora = agora.getHours()
+    var min = agora.getMinutes()
     var msg = document.getElementById('msg')
     var img = document.getElementById('imagem')
 
-    msg.innerHTML = `agora são ${hora} horas`
+    msg.innerHTML = `agora são ${hora}:${min}`
 
     if(hora >= 4 && hora < 12){
         img.src = 'imagens/dia.png'
