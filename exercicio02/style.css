@@ -5,6 +5,10 @@ body{
     font: noraml 15pt;
 
 }
+header{
+    text-align: center;
+    color: white;
+}
 section{
     background-color: white;
     padding: 15px;
@@ -14,9 +18,8 @@ section{
     max-width: 1000px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.438);
 }
-header{
+#res{
     text-align: center;
-    color: white;
 }
 footer{
     text-align: center;
