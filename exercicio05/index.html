@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Numeros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Analizador de Numeros
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Numeros (entre1 e 100) <input type="number" id="numtxt"> <input type="button" value="adicionar" onclick="adicionar()">
+            </p>
+
+            <select name="Numeros" id="selnum" size="10" >
+
+            </select>
+            <p><input type="button" value="finalizar" onclick="finalizar()"></p>
+        </div>
+        <div id="resultado">
+    
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
