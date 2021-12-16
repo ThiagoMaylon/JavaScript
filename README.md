@@ -1,3 +1,3 @@
 # JavaScript
- curso de Js do CursoEmVideo
+ curso de JavaScript do CursoEmVideo e CFBCursos
 
