@@ -49,8 +49,7 @@ function finalizar(){
             }
             if(Number(valor[c]) < menor){
                 menor = valor[c]
-            }
-            
+            }           
         }
         res.innerHTML = " "
         res.innerHTML += `<p>temos um total de ${total} numeros cadastrado</p>`
